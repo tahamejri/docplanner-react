@@ -1,0 +1,438 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+body{
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  align-items: center;
+
+}
+
+header{
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  margin-top:0px; 
+  background-color: white;
+}
+#logoheader{
+  flex: 1;
+  padding-left:13.8% ;
+}
+
+#logoheader img{
+  width: 268px;
+  height: 33px;
+}
+
+header ul{
+  flex: 1;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 32%;
+}
+
+header li {
+  margin: 3%;
+  font-size: .9375rem;
+  font-weight: 400;
+  line-height: 2em;
+}
+
+#firstliheader {
+  color: #00BFA5 ;
+}
+
+header li a {
+  text-decoration: none;
+  color: #ABABAB;
+}
+header li a:hover {
+  
+  color: #00BFA5 ;
+}
+
+#headerlist{
+  flex:1;
+}
+
+.lead__logo{
+  max-width: 100%;
+  height: auto;
+}
+
+#logoandtitle{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 15vh
+}
+
+#logoandtitle h1{
+  color: #00BFA5;
+  font-size: 2.125rem;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+}
+
+#firstarticle{
+  display: flex;
+  flex-flow: row nowrap;
+  /* justify-content: center; */
+  width: 72vw;
+  margin-left: 13%;
+
+}
+
+.arimg{
+  width: 0%;
+  display: flex;
+  flex: 1;
+  flex-flow: column nowrap;
+  padding: 2% 1%;
+}
+
+.imagecontainer{
+  display: flex;
+  flex-flow: column;
+  margin-top: 10vh;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.titles {
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-left: 7%;
+  color: white;
+}
+
+
+
+#imgcontainer1{
+  background-color: #00CCB1;
+}
+
+#imgcontainer2{
+  background-color: #3D83DF;
+}
+
+.imgand{
+  display: flex;
+  align-items: top;
+  height: 40vh;
+}
+
+.imgand select{
+  height: 40px;
+  margin-left: 7%;
+  border-radius: 5px;
+
+}
+
+#secongimgdiv{
+  padding-left: 40%;
+}
+
+.imagecontainer * {
+  transform: translateX(100px);
+  transform: translateX(0px);
+  transition-duration: 0.5s;
+ 
+}
+.inlineparagraph{
+  color: #747474;
+  margin: .8em 0;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+#parlogo{
+  display: flex;
+  width: 72vw;
+  margin-top: 3%;
+  margin-bottom: 4%;
+  margin-left: 10%;
+  
+}
+#paraglogos{
+  flex:1 ;
+  color: #00CCB1 ;
+  height: 100%;
+}
+#paraglogos h1{
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  letter-spacing: .3px;
+  font-size: 1.625em;
+  margin: .25em 0 .35em;
+  padding-right: 1em;
+}
+
+
+
+#logos{
+  flex:3 ;
+}
+#logos ul{
+  list-style: none;
+  display:flex;
+  flex-wrap: wrap;
+  padding-left: 5%;
+  
+}
+
+#logos ul li{
+  font-size: 1rem;
+  display: inline-block;
+  width: 168px;
+  padding: 5px 0;
+}
+
+svg{
+  height: 20px;
+  width: auto;
+  max-width: 100%;
+  padding-left: 10px;
+  fill: #ABABAB;
+  margin-top: 5%;
+}
+svg:hover{
+  fill : #00CCB1;
+}
+
+
+
+#secbiglogo{
+  background: #e5faf8;
+  background-image: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+  /* height: 100vh; */
+  width: 75vw;
+  display: flex;
+}
+
+#secbiglogoSec{
+  background: #e5faf8;
+  background-image: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4%;
+  overflow: hidden;
+}
+
+
+
+#leftlogo{
+  flex: 1;
+}
+
+
+
+#leftlogo h1{
+  line-height: 1.3;
+  font-size: 2.125rem;
+  color: #00b39b;
+  text-shadow: none;
+  font-weight: 300;
+  letter-spacing: .3px;
+  padding-top: 10%;
+}
+
+#secbiglogo p {
+  max-width: 415px;
+  font-size: .875em;
+  font-weight: 400;
+  line-height: 1.7142857143;
+  color: #747474;
+}
+#secbiglogo h3 {
+  font-size: 1.8461538462em;
+  color: #00b39b;
+  margin: .5em 0;
+  font-weight: 300;
+  letter-spacing: .3px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#rightlogo{
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  align-content: flex-start;
+  line-height: 25px;
+
+}
+
+.vert-align{
+  height: 230px;
+  text-align: center ;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.05);
+  padding: 20px;
+  font-size: .8125em;
+  width: 13.5vw;
+  margin: 10px;
+}
+
+
+.firstdivmargin{
+  margin-top: 20px;
+
+}
+
+#beforeflex{
+text-align: center;
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+margin-top: 8%;
+
+}
+
+#beforeflex h1{
+  text-align: center;
+  font-size: 1.8461538462em;
+  color: #00b39b;
+  margin: .5em 0;
+  font-weight: 300;
+  letter-spacing: .3px;
+  text-align: center;
+  margin-top: 0px;
+ 
+  
+}
+
+#beforeflex p{
+  text-align: center;
+  max-width: 415px;
+  font-size: .875em;
+  font-weight: 400;
+  line-height: 1.7142857143;
+  color: #747474;
+  
+  
+}
+
+#city{
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  height: 120vh;
+  justify-content: space-around;
+  margin-top: 4%;
+  margin-left: 10%;
+}
+
+.office a{
+  display: flex;
+  flex-flow: column;
+  text-decoration: none;
+  width: 25vw;
+  padding: 0px;
+  align-items: center;
+  /* margin-top: 100px; */
+}
+
+
+
+
+.office__desc{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+}
+
+
+.spanbutton{
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+  /* padding-left: 20px ;
+  padding-right: 20px; */
+  background-color:#3d83df; ;
+  font-size: 11px;
+ /* height: 30px; */
+ /* font-size: .625rem; */
+  padding: 1em 1.5em;
+}
+.spanbutton:hover {
+  background-color: #1662C6 ;
+}
+
+
+.firstspanbutt{
+  color :#747474 ;
+}
+
+.office img{
+  border-radius: 6px 6px 0px 0px;
+}
+
+
+.biglogo{
+  top: 50px;
+  left:-120px;
+  position: relative;
+}
+
+.dropDown{
+  position: relative;
+  display: none;
+}
+
+.dropDown ul{
+  display: flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  right: -0%;
+  width: 15vw;
+  background-color: white;
+  z-index: 2;
+  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+
+
+#one:hover .dropDown {
+  display: block;
+
+}
+
+.main-footer {
+  border-top: 1px solid #eef2f2;
+  font-size: .75em;
+  color: #ababab;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 5%;
+}
+
+.main-footer a{
+  text-decoration: none;
+  color: #3D83E1;
+}
